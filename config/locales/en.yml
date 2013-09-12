@@ -2,12 +2,14 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  copyright: Free and Open Source, Cuprium 2012
+  copyright: Free and Open Source, Cuprium 2013
   logged_in_as: Logged in as
+  logout: Log out
   search: Search
   processing: "Processing ..."
   account: Account
   create: "Create %{name}"
+  created_ok: "%{name} created"
 
   balance: Balance
   payment: Payment
@@ -35,6 +37,8 @@ en:
     index_page_message: Please select which area you want to work in from the menu above.
     payments_page_welcome: "Payments and withdrawals"
     left_page_message: Please select activity from the menu on the left
+    clients_page_welcome: Clients
+    loan_products_page_welcome: Loan products
 
     navbar:
       title: "Cuprium: Data Manager"
@@ -45,6 +49,7 @@ en:
       loans: Loans
       clients: Clients
       escrow: Escrow
+      loan_products: Loan products
 
     payments_menu: 
       title: Payments Menu
@@ -59,6 +64,13 @@ en:
     clients_menu: 
       title: Clients
       new_client: Create new client
+
+    loan_products_menu:
+      title: Loan Products menu
+      new_loan_product: Create new loan product
+
+    loan_product:
+      create_question: Create question
 
   helpers:
     button:
