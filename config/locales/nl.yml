@@ -2,7 +2,7 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  copyright: Free and Open Source, Cuprium 2012
+  copyright: Free and Open Source, Cuprium 2013
   logged_in_as: Logged in as
   search: Search
   processing: "Processing ..."
@@ -18,14 +18,14 @@ en:
   debit_balance_not_allowed: withdrawal would put this account over the debit limit
   payment_must_be_credit_or_debit: payment direction must be credit (1) or debit (-1)
   no_conversion_available: "no conversion available for %{code}"
-  failed: FAILED
+  failed: MISLUKT
 
   cannot_transfer_between_the_same_account: cannot transfer between the same account
   transfer_needs_both_accounts_to_exist: transfer needs both accounts to exist
   transfer_amount_must_be_greater_than_zero: transfer amount must be greater than zero
   cannot_create_a_ledger_entry_without_a_type: cannot create a ledger entry without a type
   
-  next_page: Next page
+  next_page: Volgende pagina
 
   loan_application:
     make_loan_application: Make a loan application
