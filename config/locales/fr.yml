@@ -1,13 +1,15 @@
 # Sample localization file for English. Add more files in this directory for other locales.
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
-cy:
-  copyright: Meddalwedd Rhydd, Cuprium 2013
+en:
+  copyright: Free and Open Source, Cuprium 2013
   logged_in_as: Logged in as
-  search: Chwilio
+  logout: Log out
+  search: Search
   processing: "Processing ..."
   account: Account
-  create: "Creu %{enw}"
+  create: "Create %{name}"
+  created_ok: "%{name} created"
 
   balance: Balance
   payment: Payment
@@ -18,33 +20,36 @@ cy:
   debit_balance_not_allowed: withdrawal would put this account over the debit limit
   payment_must_be_credit_or_debit: payment direction must be credit (1) or debit (-1)
   no_conversion_available: "no conversion available for %{code}"
-  failed: METHWYD
+  failed: FAILED
 
   cannot_transfer_between_the_same_account: cannot transfer between the same account
   transfer_needs_both_accounts_to_exist: transfer needs both accounts to exist
   transfer_amount_must_be_greater_than_zero: transfer amount must be greater than zero
   cannot_create_a_ledger_entry_without_a_type: cannot create a ledger entry without a type
   
-  next_page: Tudalen nesaf
+  next_page: Next page
 
   loan_application:
     make_loan_application: Make a loan application
  
   data_manager:
-    welcome: Croeso Data Manager
+    welcome: Welcome Data Manager
     index_page_message: Please select which area you want to work in from the menu above.
     payments_page_welcome: "Payments and withdrawals"
     left_page_message: Please select activity from the menu on the left
+    clients_page_welcome: Clients
+    loan_products_page_welcome: Loan products
 
     navbar:
       title: "Cuprium: Data Manager"
-      home: Cartref
+      home: Home
       payments: Payments/Withdrawals
       withdrawals: Withdrawals
       transfers: Transfers
       loans: Loans
       clients: Clients
       escrow: Escrow
+      loan_products: Loan products
 
     payments_menu: 
       title: Payments Menu
@@ -60,9 +65,16 @@ cy:
       title: Clients
       new_client: Create new client
 
+    loan_products_menu:
+      title: Loan Products menu
+      new_loan_product: Create new loan product
+
+    loan_product:
+      create_question: Create question
+
   helpers:
     button:
-      create: "Creu %{model}"
+      create: "Create a %{model}"
       update: "Confirm changes to %{model}"
       search: "Search for %{model}"
 
