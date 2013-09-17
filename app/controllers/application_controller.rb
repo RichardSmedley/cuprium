@@ -13,6 +13,22 @@ def default_url_options(options={})
 end
 
 
+#class SomeController < ApplicationController
+  def some_action
+    http_accept_language.user_preferred_languages # => %w(nl-NL nl-BE nl cy-cy cy en-GB en-US en)
+    available = %w(en en-GB nl cy)
+    http_accept_language.preferred_language_from(available) # => 'nl'
+
+    http_accept_language.user_preferred_languages # => %w(en-GB)
+    available = %w(en en-GB en-US)
+    http_accept_language.compatible_language_from(available) # => 'en-GB'
+
+    http_accept_language.user_preferred_languages # => %w(cy cy-cy nl-NL nl-BE nl en-US en)
+    available = %w(cy fr en nl) # This could be from I18n.available_locales
+    http_accept_language.preferred_language_from(available) # => 'cy'
+  end
+#end
+
 #  def extract_locale_from_subdomain
 #    parsed_locale = request.subdomains.first
 #    I18n.available_locales.include?(parsed_locale.to_sym) ? parsed_locale : nil

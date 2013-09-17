@@ -10,7 +10,7 @@ gem 'rake'
 
 gem 'pg'
 
-gem 'devise'
+gem 'devise', '~> 3.0.3'
 
 gem 'debugger'
 
