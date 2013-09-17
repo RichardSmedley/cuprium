@@ -5,6 +5,19 @@ Cuprium::Application.routes.draw do
   devise_for :data_managers 
 
   namespace :data_manager do
+
+    ### I18n
+
+    scope "(:locale)", locale: /en|cy|fr|nl/ do
+    resources :payments
+    resources :withdrawals
+    resources :clients
+    resources :loan_products
+    resources :questions
+    resources :accounts
+    end
+    ####
+
     root to: 'home#index'
     resources :payments, only: [:index,:new,:create]
     resources :withdrawals, only: [:index,:new,:create], controller: 'payments'
@@ -25,6 +38,12 @@ Cuprium::Application.routes.draw do
   resources :loan_applications, only: [:new,:create]
 
   resources :clients, only: [:new,:create], controller: 'loan_applications'
+
+### I18n
+
+scope "(:locale)", locale: /en|cy|fr|nl/ do
+  resources :data_manager
+end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

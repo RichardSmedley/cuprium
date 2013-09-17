@@ -1,8 +1,8 @@
 # Sample localization file for English. Add more files in this directory for other locales.
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
-en:
-  copyright: Free and Open Source, Cuprium 2013
+fr:
+  copyright: LibreSoft, Cuprium 2013
   logged_in_as: Logged in as
   logout: Log out
   search: Search

@@ -68,3 +68,8 @@ gem 'unicorn'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+
+# I18n from browser
+gem 'http_accept_language'
+
+
